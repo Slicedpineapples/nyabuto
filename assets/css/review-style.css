@@ -1,0 +1,63 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+    
+.name, .role, .review, .photo {
+    font-size: 18px;
+    font-weight: none;
+    margin-bottom: 4px;
+    text-align: left;
+    display: block;
+}
+.submit {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+section {
+    background-color: #149ddd;
+    padding: 20px 0;
+    text-align: center;
+    line-height: normal;
+}
+
+section p {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container ul li {
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+.tips {
+    background-color: #149ddd;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 10px ;
+}
+

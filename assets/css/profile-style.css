@@ -1,0 +1,52 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0% auto;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #149ddd;
+}
+
+h4 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="password"],
+input[type="submit"] {
+    padding: 8px; 
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #149ddd;
+    color: #fff;
+    cursor: pointer;
+    width: 200px; /* Adjust the width to fit the content */
+}
+
+input[type="submit"]:hover {
+    background-color: #0c7bb3;
+}
+
+h3 {
+    color: #333;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.no-reviews {
+    color: #777;
+    font-style: italic;
+}
