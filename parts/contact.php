@@ -5,15 +5,15 @@
         <div class="section-title">
           <h2>Contact</h2>
           <p>
-          "Proactively engaging with a collaborative spirit, I extend an invitation to explore the possibilities of 
+          Proactively engaging with a collaborative spirit, I extend an invitation to explore the possibilities of 
           working together. Your unique perspective and expertise would be valuable additions to our shared objectives. 
-          Let's connect and synergize for mutual success!"
+          Let's connect and synergize for mutual success!
 
           </p>
         </div>
 
           <div class="contact-form">
-            <form action="forms/contact-auth.php" method="post" role="form" class="php-email-form">
+            <form action="forms/contact-auth.php" method="post" role="form" name="php-email-form">
               <div class="row">
                 <div class="form-name">
                   <label for="name">Name</label>
@@ -33,7 +33,7 @@
                 <textarea class="form-control" name="message" rows="10" required></textarea>
               </div>
               <div class="text-center"><button type="send">Send Message</button></div>
-            </form>>
+            </form>
           </div>
 
         </div>

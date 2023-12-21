@@ -28,8 +28,12 @@
     $mail->Subject = $subject;
     $mail->Body = $message;
 
-    $mail->send();
-    // header("Location: sent.html");
-    // echo "Sent successfully";
-    
+    if($mail->send()){;
+    echo '<script>alert("Message sent successfully")</script>';
+    echo '<script>setTimeout(function(){ window.location.href = "../index.php#contact"; }, 1000);</script>';
+
+    }else{
+    echo '<script>alert("Something went wrong. Try again.")</script>';
+    echo '<script>setTimeout(function(){ window.location.href = "../index.php#contact"; }, 1000);</script>';
+    }
 ?>

@@ -11,7 +11,15 @@
 <?php include 'parts/top.php'; ?>
 <?php include 'parts/about.php'; ?>
 <?php include 'parts/skills.php'; ?>
-<?php include 'parts/resume.php'; ?>
+
+<?php
+if (isset($_SESSION['login'])) {
+    include 'parts/resume.php';
+}else{
+    include 'parts/resume2.php';
+}
+?>
+
 <?php include 'parts/education.php'; ?>
 <?php include 'parts/portfolio.php'; ?>
 <?php include 'parts/reviews.php'; ?>

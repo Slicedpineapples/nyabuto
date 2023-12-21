@@ -1,0 +1,180 @@
+/* Reset some default styles */
+
+.container .frm {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center; /* Adjusted from h1 */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%; /* Adjusted from input[type="text"], input[type="password"], input[type="submit"] */
+}
+
+button {
+    background-color: #008CBA;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0077A3;
+}
+
+.signup button,
+.home button {
+    background-color: #008CBA; /* Adjusted from #149ddd */
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px; /* Adjusted from 4px */
+    border: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.signup button:hover,
+.home button:hover {
+    background-color: #0077A3; /* Adjusted from #0c7bb3 */
+}
+
+/* Reset some default styles */
+body, h1, h2, p, button, label {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+#frm, #sgnup {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button, .signup button, .home button {
+    background-color: #008CBA;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover, .signup button:hover, .home button:hover {
+    background-color: #0077A3;
+}
+
+.signup button, .home button {
+    margin-top: 10px;
+}
+
+/* Additional styles for the signup form */
+
+#sgnup .login,
+#sgnup .home {
+    text-align: center;
+    margin-top: 10px;
+}
+/* ---------------------------------------------------------------
+logout */
+
+/* Path: assets/css/logout.css */
+/* Reset some default styles */
+
+.inner-page {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #149ddd;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #008CBA;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #0077A3;
+}
+
+.login, .signup, .home {
+    margin-top: 10px;
+}
