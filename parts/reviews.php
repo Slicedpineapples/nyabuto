@@ -13,8 +13,7 @@
           <div class="swiper-wrapper">
             <?php
             include('assets/server/connection.php');
-            // Define the SQL query
-            $sql = "SELECT name, role, review, photo FROM reviews ORDER BY RAND() LIMIT 5";
+            $sql = "SELECT name, role, review, photo FROM reviews ORDER BY RAND() LIMIT 50";
 
             // Execute the query
             $result = mysqli_query($con, $sql);
@@ -62,16 +61,19 @@
 
       </div>
     </section><!-- End reviews Section -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-        loop: true,
-        autoplay: {
-          delay: 3600,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-      });
-    </script>
+    <?php
+    // Add the missing import statement for the Swiper class
+    ?>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+          var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+              delay: 3600,
+            },
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+          });
+        </script>

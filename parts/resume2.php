@@ -12,35 +12,23 @@
 
             <div class="resume-item">
               <h4>UNITED NATIONS VOLUNTEERS</h4>
-              <h5>Sept, 2021 - Aug, 2022</h5>
-              <p><em>Nairobi, Kenya</em></p>
-              <li>To see more details, you need to be logged in.</li>
-              <li>Or sign up. It's free.</li>
+              <h5><p>To see more details, you need to be logged in.</p>
+              <p>Or sign up. It's free.</p></h5>
             </div>
             <div class="resume-item">
               <h4>GAP STUDENT, ST. ANDREW’S SCHOOL, TURI</h4>
-              <h5>Feb, 2020 - Jun, 2021</h5>
-              <p><em>Molo, Kenya</em></p>
-              <li>To see more details, you need to be logged in.</li>
-              <li>Or sign up. It's free.</li>
+              <h5><p>To see more details, you need to be logged in.</p>
+              <p>Or sign up. It's free.</p></h5>
             </div>
             <div class="resume-item">
               <h4>INTERN, JOMO KENYATTA INTERNATIONAL AIRPORT</h4>
-              <h5>Aug, 2018 - Aug, 2018</h5>
-              <p><em>Nairobi, Kenya </em></p>
-              <li>To see more details, you need to be logged in.</li>
-              <li>Or sign up. It's free.</li>
-              </ul>
+              <h5><p>To see more details, you need to be logged in.</p>
+              <p>Or sign up. It's free.</p></h5>
             </div>
             <div class="resume-item">
               <h4>VOLUNTEER, THE NAIROBI HOSPITAL</h4>
-              <h5>April, 2017 - April, 2017</h5>
-              <p><em>The Nairobi Hospital, Nairobi, Kenya</em></p>
-              <p>Main roles</p>
-              <ul>
-              <li>To see more details, you need to be logged in.</li>
-              <li>Or sign up. It's free.</li>
-              </ul>
+              <h5><p>To see more details, you need to be logged in.</p>
+              <p>Or sign up. It's free.</p></h5>
             </div>
           </div>
         </div>

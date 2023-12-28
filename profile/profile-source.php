@@ -3,10 +3,13 @@ include '../assets/server/connection.php';
 session_start();
 if ($_SESSION['login']) {
     $email_name = $_SESSION['login'];
-    $name_query = "SELECT name FROM users WHERE (name = '$email_name') OR (email = '$email_name');";
+    $name_query = "SELECT name, email FROM users WHERE (name = '$email_name') OR (email = '$email_name');";
     $name_result = mysqli_query($con, $name_query);
     $name_row = mysqli_fetch_assoc($name_result);
     $name = $name_row['name'];
+    $email_result = mysqli_query($con, $name_query);
+    $email_row = mysqli_fetch_assoc($email_result);
+    $email = $email_row['email'];
     ?>
     <head>
         <link rel="stylesheet" type="text/css" href="../assets/css/profile-style.css">
@@ -27,7 +30,7 @@ if ($_SESSION['login']) {
 <div><h4> My reviews</h4></div>
 
     <?php
-    $sql = "SELECT articleId, name, role, review FROM reviews where name = '$name';";
+    $sql = "SELECT articleId, name, role, review FROM reviews where email = '$email';";
     $result = mysqli_query($con, $sql);
     if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
@@ -44,7 +47,8 @@ if ($_SESSION['login']) {
             <?php
         }
     } else {
-        echo "No reviews found.";
+        echo "No reviews yet.\n";
+        echo "Give your first review today. To get started, visit <i> Give a review <i>.";
     }
     mysqli_close($con);
 } else {

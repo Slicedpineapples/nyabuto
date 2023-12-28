@@ -12,6 +12,7 @@
     $passcode = stripslashes($passcode);
     $passcode = mysqli_real_escape_string($con, $passcode);
     $hashedPasscode = password_hash($passcode, PASSWORD_DEFAULT);
+    $time = date("Y-m-d H:i:s");
 
     $sql = "SELECT * FROM users where email = '$email';";  
     $result = mysqli_query($con, $sql);
@@ -21,10 +22,10 @@
     
     if($count == 1){  
         echo("Sorry, this email has been used before");
-        echo "<script>setTimeout(function(){window.location.href='signup.php';}, 3000);</script>";
+        echo "<script>setTimeout(function(){window.location.href='../signup/signup.php';}, 3000);</script>";
         exit;
     } else {  
-        $sql = "INSERT INTO users(name, email, passcode) VALUES ('$name', '$email', '$hashedPasscode')";
+        $sql = "INSERT INTO users(name, email, passcode, time) VALUES ('$name', '$email', '$hashedPasscode', '$time')";
         if (mysqli_query($con, $sql)) {
             echo "Registration successful. ";
             echo "<p>Redirecting to login page...</p>";

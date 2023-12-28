@@ -19,8 +19,14 @@ if (isset($_SESSION['login'])) {
     include 'parts/resume2.php';
 }
 ?>
+<?php
+if (isset($_SESSION['login'])) {
+    include 'parts/education.php';
+}else{
+    include 'parts/education2.php';
+}
+?>
 
-<?php include 'parts/education.php'; ?>
 <?php include 'parts/portfolio.php'; ?>
 <?php include 'parts/reviews.php'; ?>
 <?php include 'parts/contact.php'; ?>
