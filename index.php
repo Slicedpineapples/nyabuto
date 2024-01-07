@@ -30,6 +30,7 @@ if (isset($_SESSION['login'])) {
 <?php include 'parts/portfolio.php'; ?>
 <?php include 'parts/reviews.php'; ?>
 <?php include 'parts/contact.php'; ?>
+<?php include 'parts/portfolio-repair.php';?>
 <?php include 'parts/botttom.php'; ?>
 
 </body>

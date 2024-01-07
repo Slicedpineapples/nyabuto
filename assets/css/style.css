@@ -502,7 +502,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+/* .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
 
@@ -598,12 +598,12 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+/* .portfolio-details {
   padding-top: 40px;
 }
 
@@ -663,7 +663,7 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Services

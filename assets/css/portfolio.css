@@ -1,0 +1,11 @@
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-title-image {
+  flex: 0 0 calc(33.33% - 20px); /* 20px is for space between items */
+  margin-bottom: 20px; /* space between rows */
+  box-sizing: border-box;
+}
