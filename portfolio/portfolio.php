@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="../assets/css/admin.css" rel="stylesheet">
+    
 </head>
 <body>
-
-    <h2>Add data to portfolio</h2>
-
+    <p>Fill in the form below to add a new item to the portfolio.</p>
+    <div container="form5">
     <form action="../forms/send-portfolio.php" onsubmit="return validation()" method="post" enctype="multipart/form-data" name="form">
         
         <label for="title">Title:</label>
@@ -40,6 +41,7 @@
         
         <input type="submit" value="Submit">
     </form>
+    </div>
 
 </body>
 </html>

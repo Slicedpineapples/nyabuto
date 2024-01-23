@@ -1,0 +1,115 @@
+.container {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.addtoportfolio {
+  margin-bottom: 20px;
+}
+
+.addtoportfolio button, .allreviews button, .allusers button {
+  background-color: #149ddd;
+  color: #fff;
+  padding: 10px 20px;
+  border: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  width: 150px;
+}
+
+#portfolioLink {
+  display: none;
+  margin-top: 20px;
+}
+
+/* Apply styles to the form container */
+div[container="form5"] {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form elements */
+div[container="form5"] form {
+  display: flex;
+  flex-direction: column;
+}
+
+div[container="form5"] label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+div[container="form5"] input[type="text"],
+div[container="form5"] input[type="date"],
+div[container="form5"] input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+div[container="form5"] input[type="submit"] {
+  background-color: #149ddd;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Portfolio styles */
+.addtoportfolio h3 {
+  font-size: 20px;
+}
+
+/* Reviews and Users section styles */
+div[section="allreviews"]{
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+h3 {
+  font-size: 32px;
+  color: #149ddd;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #149ddd;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 150px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #149ddd;
+  color: #fff;
+}
+
+tbody tr:hover {
+  background-color: #f5f5f5;
+}

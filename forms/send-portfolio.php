@@ -69,8 +69,7 @@ include '../assets/server/connection.php';
         VALUES ('$homeImageFilename', '$title', '$image3Filename', '$image4Filename', '$category', '$client', '$dates', '$link', '$summary')";
 
         if (mysqli_query($con, $sql)) {
-            echo "Data has been inserted successfully.";
-            header("refresh:2; url=../portfolio/portfolio.php");
+            header("Location: ../success.php");
             exit;
         } else {
             echo "Error: " . mysqli_error($con);

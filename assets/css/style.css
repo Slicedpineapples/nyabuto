@@ -235,8 +235,9 @@ h6 {
 
 .loginbar,
 .logout-button,
-#more,
+#admin,
 #profile,
+#more,
 #login,
 #signup,
 #logout {
@@ -251,8 +252,9 @@ h6 {
 
 .loginbar:hover,
 .logout-button:hover,
-#more:hover,
+#admin:hover,
 #profile:hover,
+#more:hover,
 #login:hover,
 #logout:hover,
 #signup:hover {
@@ -502,7 +504,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-/* .portfolio .portfolio-item {
+.portfolio .portfolio-item {
   margin-bottom: 30px;
 }
 
@@ -598,12 +600,12 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: 0;
-} */
+}
 
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-/* .portfolio-details {
+.portfolio-details {
   padding-top: 40px;
 }
 
@@ -663,7 +665,7 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
-} */
+}
 
 /*--------------------------------------------------------------
 # Services

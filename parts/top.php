@@ -3,7 +3,7 @@
     <div class="d-flex flex-column">
       <div class="profile">
         <img src="assets/img/profile.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Felix Nyabuto</a></h1>
+        <h1 class="text-light"><a href="index.php">Felix Nyabuto</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
           <a href="#" class="github"><i class="bx bxl-github"></i></a>
@@ -26,16 +26,21 @@
         <ul>
           <?php
           session_start();
-          if (isset($_SESSION['login']) ) {
-            
-            echo '<li><button id = "logout" onclick="window.location.href = \'logout/logout.php\'");">Log out</button></li>';
+
+        if (isset($_SESSION['admin']) ){
+            echo '<li><button id="admin" onclick="window.location.href = \'admin/admin.php\'">Admin</button></li>';
             echo '<li><button id="more" onclick="window.location.href = \'reviews/review.php\'">Give a review</button></li>';
             echo '<li><button id="profile" onclick="window.location.href = \'profile/profile.php\'">Profile</button></li>';
-          } else {
-            echo '<li><button id = "login"onclick="window.location.href = \'login/login.php\'">Log in</button></li>';
-            echo '<li><button id = "signup"onclick="window.location.href = \'signup/signup.php\'">Sign up</button></li>';
-          }
-          ?>
+            echo '<li><button id = "logout" onclick="window.location.href = \'logout/logout.php\'");">Log out</button></li>';
+        } else if (isset($_SESSION['login'])) {
+          echo '<li><button id = "logout" onclick="window.location.href = \'logout/logout.php\'");">Log out</button></li>';
+          echo '<li><button id="more" onclick="window.location.href = \'reviews/review.php\'">Give a review</button></li>';
+          echo '<li><button id="profile" onclick="window.location.href = \'profile/profile.php\'">Profile</button></li>';
+        } else  {
+          echo '<li><button id = "login"onclick="window.location.href = \'login/login.php\'">Log in</button></li>';
+          echo '<li><button id = "signup"onclick="window.location.href = \'signup/signup.php\'">Sign up</button></li>';
+        }
+        ?>
         </ul>
       </nav>
     </div>

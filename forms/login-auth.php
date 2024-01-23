@@ -9,24 +9,33 @@
     $passcode = mysqli_real_escape_string($con, $passcode);   
     $hashedPasscode = password_hash($passcode, PASSWORD_DEFAULT);
 
+    
     $sql = "SELECT * FROM users where  name = '$email_name' OR email = '$email_name';";  
     $result = mysqli_query($con, $sql);
     $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
     $count = mysqli_num_rows($result);
     $storedHashedPassword=$row['passcode'];
-
-    if(password_verify($passcode,$storedHashedPassword)){
-        // Set session cookie parameters to last until the user logs out
-        // session_set_cookie_params(0);
+    $admin_id = $row['id'];
+    
+  
+    if(password_verify($passcode,$storedHashedPassword)&&($admin_id == 0)){
         session_start();
+        $_SESSION['login'] = $email_name;
+        $_SESSION['admin'] = $admin_id;
+        header("Location: ../index.php");
+        session_regenerate_id(true); // Regenerate session ID and update session cookie
+        sleep(1.5);
+        exit;
+    } else if (password_verify($passcode,$storedHashedPassword)&&($admin_id != 0)) {
         // $_SESSION['login'] = true;
+        session_start();
         $_SESSION['login'] = $email_name;
         session_regenerate_id(true); // Regenerate session ID and update session cookie
         header("Location: ../index.php");
         sleep(1.5);
         exit;
     } else {
-        sleep(2);
+        sleep(1);
         echo "Incorrect login details. ";
         echo "<p>Redirecting to login page...</p>";
         session_destroy();
